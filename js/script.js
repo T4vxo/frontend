@@ -16,16 +16,16 @@
             });
             lion.click(function () {
 
-                loopAnimate(this, 3000);
+                loopAnimate(this,1000);
 
             });
 
             function loopAnimate(obj, speed) {
                 console.log("R:" + r + "\nspeed:"+speed);
                 r += 180;
-                obj.animate({transform: "r" + r}, speed, "", function () {
+                obj.animate({transform: "r" + r}, speed, "elastic", function () {
                  
-                    obj.animate({transform: "r" + r}, speed, "");
-                    loopAnimate(obj, speed);
+                    //obj.animate({transform: "r" + r}, speed, "");
+                   // loopAnimate(obj, speed);
                 });
             }
