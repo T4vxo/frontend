@@ -4,7 +4,7 @@
             var lion = p.path(d);
             lion.attr({
                 fill: "45-#000-#555",
-                stroke: "#800",
+                stroke: "#00F",
                 transform: "r180",
                 cursor: "pointer"
             });
