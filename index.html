@@ -10,9 +10,30 @@ and open the template in the editor.
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        <div id="paper"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-2">
+                    <div id="left-paper"></div>
+                </div>
+                <div class="col-xs-10">
+                    <div id="paper">
+                        <img id="image" class="img-responsive" src="image/noimage.png" alt="" />
+                        <h2 id="title">Title</h2>
+                        <p id="text">text</p>
+                        <p><span style="display: none;" id="prev" class="glyphicon glyphicon-arrow-left"></span><span style="display: none;" id="next" class="glyphicon glyphicon-arrow-right"></span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-10 col-xs-offset-2">
+                    <div id="lower-paper"></div>
+                </div>
+            </div>
+        </div>
+
         <script src="bower_components/jquery/dist/jquery.min.js" type="text/javascript"></script>
         <script src="bower_components/raphael/raphael.min.js" type="text/javascript"></script>
         <script src="js/script.js" type="text/javascript"></script>

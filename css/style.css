@@ -9,8 +9,19 @@ and open the template in the editor.
 */
 #paper{
     outline: 2px dashed darkred;
-    width: 500px;
     height: 500px;
-    margin: 0 auto;
+}
+#left-paper{
+    min-height: 500px;
+}
+.glyphicon{
+    font-size: 3em ! important;
+}
+#next{
+    float: right;
 }
 
+#image{
+    width: 300px;
+    height: 300px;
+}
